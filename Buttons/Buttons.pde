@@ -1,7 +1,7 @@
 //global variables
 
 float buttonX, buttonY, buttonWidth, buttonHeight;
-color buttonColour, purple = #BFA4CE, pink = #FAB6B8, white=#FFFFFF, reset= white;
+color buttonColour, random = color(random(0, 225), random(255), random(255)), purple = #BFA4CE, pink = #FAB6B8, white=#FFFFFF, reset= white;
 
 
 void setup() {
@@ -14,7 +14,7 @@ void setup() {
 }//End setup()
 
 void draw() {
-  background(white);
+  background(random);
  // println(mouseX, mouseY);
   if ( mouseX >= buttonX && mouseY >= buttonY && mouseX <= buttonX+buttonWidth && mouseY <= buttonY+buttonHeight) {
     buttonColour = pink;
