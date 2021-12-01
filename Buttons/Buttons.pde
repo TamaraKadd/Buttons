@@ -3,6 +3,7 @@
 float buttonX, buttonY, buttonWidth, buttonHeight;
 color buttonColour, random = color(random(0, 225), random(255), random(255)), green = #1BFF08, red = #FF001E , white=#FFFFFF , reset= white;
 String title = "Do NOT click the button";
+String words = "I said don't."; 
 PFont titleFont;
 int titleX, titleY, titleWidth, titleHeight;
 
@@ -38,7 +39,7 @@ textAlign(CENTER, CENTER);
 textFont(titleFont, 20);
 
 //Printing Text to Canvas
-text( title, titleX, titleY, titleWidth, titleHeight);
+text( words, titleX, titleY, titleWidth, titleHeight);
 fill(red); //resets my ink
     buttonColour = red;
   } else {
